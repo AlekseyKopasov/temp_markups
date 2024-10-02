@@ -1,0 +1,115 @@
+@import 'fonts.css';
+@import 'normalize.css';
+
+:root {
+  --fz-default:         16px;
+  --ff-default:         "Roboto", Arial, Helvetica, sans-serif;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width: 1024px;
+
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+
+  font-size: var(--fz-default);
+  font-weight: 400;
+  color: #000000;
+
+  background-color: rgba(34, 142, 157, 0.1);
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 30px;
+  padding-bottom: 34px;
+  border-radius: 7px;
+  background-color: #ffffff;
+}
+
+.register__title {
+  margin: 0;
+  margin-bottom: 24px;
+
+  font-size: 32px;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: center;
+}
+
+.register__field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.register__field:last-child {
+  margin-bottom: 0;
+}
+
+.register__label {
+  margin-bottom: 5px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.register__input {
+  min-width: 287px;
+  padding: 11px 14px 12px 14px;
+  border-radius: 3px;
+  border: 1px solid #000000;
+  font-family: inherit;
+  font: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 300;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 300;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 300;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 300;
+}
+
+.register__btn {
+  margin-top: 34px;
+  padding: 11px 24px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fff8f8;
+
+  border: none;
+  border-radius: 3px;
+  background-color: #00546e;
+}
